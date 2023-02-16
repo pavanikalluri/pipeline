@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+    stages{
+        stage(BUILD)
+        {
+            steps{
+            echo"this is my Build stage..."
+            }
+        }
+        stage(TEST)
+        {
+            steps{
+            echo"this is my Test stage..."
+            }
+        }
+        stage(DEPLOY)
+        {
+            steps{
+            echo"this is my Depoly stage..."
+            }
+        }
+    }
+}
+
+        
